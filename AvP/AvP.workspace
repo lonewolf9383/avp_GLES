@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Workspace Name="AvP" Database="./AvP.tags">
+  <Project Name="AvP" Path="AvP.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="no">
+      <Project Name="AvP" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="no">
+      <Project Name="AvP" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Pandora" Selected="no">
+      <Project Name="AvP" ConfigName="Pandora Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="GLES Emulated" Selected="no">
+      <Project Name="AvP" ConfigName="GLES Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="pandora release" Selected="yes">
+      <Project Name="AvP" ConfigName="pandora release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

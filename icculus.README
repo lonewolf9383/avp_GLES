@@ -1,0 +1,137 @@
+Aliens vs Predator Linux  http://icculus.org/avp/
+------------------------
+
+This is an unofficial Linux port of the Fox Interactive / Rebellion
+Developments game, Aliens Versus Predator.
+
+
+
+
+
+(Please see note below regarding installation/running.)
+
+
+Obviously this README is totally incomplete, and will probably remain so for
+quite a while, so I'll just try to list a few important notes.
+
+
+The original copyright statement for the source code:
+"The source code to Aliens Vs Predator is copyright (c) 1999-2000 Rebellion
+ and is provided as is with no warranty for its suitability for use. You may
+ not use this source code in full or in part for commercial purposes. Any use
+ must include a clearly visible credit to Rebellion as the creators and 
+ owners, and reiteration of this license."
+Take that as you will.
+You can find the original source code and other related tools at: 
+http://www.avpnews.com/mods/tools/
+
+
+Yes, the code does something.  No, it's not ready for a release. No, it is not
+vaporware.  I hope to at least complete the single player part of the game 
+before making an official release.  Check out the TODO to see what's needed to
+be done.
+
+
+If you are really itching to try this out, either install the Gold Ed. in
+windows/vmware (read below to find out why), or download the AvP Alien demo.
+If you are wanting to run the Alien demo (the installer is an .exe but you
+can just use unzip to extract the files from the .exe), add -DALIEN_DEMO to
+the CFLAGS line (the one that's uncommented) in the Makefile. Rename all game 
+files lowercase. Be sure to install SDL 1.2 (http://www.libsdl.org) with
+OpenGL support, nasm 0.98, and the latest OpenAL CVS (http://www.openal.org).
+AvP requires a 3D card with OpenGL support.
+
+***
+IMPORTANT:
+AvP now uses $HOME/.avp/ to load/store configs, logs, etc.
+NOTE: Windows profiles probably do not work in Linux and vice versa.
+
+AvP will no longer use the current working directory to look for files.  You
+must either copy or symlink the AvP binary to the game data directory and run
+that, or set AVP_DATA to the data directory.
+
+Currently:
+If you want to install the mappacks from
+http://www.avpnews.com/files/avpfiles.html, install them with the rest of
+the game data, not in ~/.avp/.  Make sure everything is lowercase (although,
+the maps in avp_rifs/Custom do not have to be totally lowercase, just the .rif
+extension).  Maybe in the future users will be able to install the files in
+~/.avp/ also.
+
+Hopefully all the necessary file loading changes were made.  Please let me
+know if something goes wrong.
+***
+
+The next line can be ignored for now:
+If you have the regular edition, add -DREGULAR_EDITION to CFLAGS.
+
+If the version you want to use is not the Gold Edition, download
+http://www.icculus.org/avp/english.txt.gz, extract it, and rename it
+language.txt (Regular Ed.) or aenglish.txt (Alien Demo). 
+
+If you get "Aborted" after starting a new game the second time or so,
+try recompiling with gcc-3.0.2.  This problem should be fixed now; if not,
+let me know.
+
+The OpenGL library is loaded dynamically.  This means that if there is
+a problem initializing OpenGL, it will not occur until you start
+a new game.
+
+
+relnev:~/avp/AvP Demo 3 - Alien$ ls
+aenglish.txt  alienavp_huds/  alienfastfile/  avp_rifs/
+relnev:~/avp/Gold Edition$ ls
+avp_huds/  avp_rifs/  cd tracks.txt  fastfile/  language.txt
+
+Support for the demo is not quite complete (some sounds are missing).
+
+
+Linux Port-specific commands:
+- ALT-ENTER for fullscreen
+- CTRL-G for mouse grab
+- PRTSCN for screenshot
+
+
+The source code that was released only works with Aliens vs Predator Gold. 
+This port currently supports Gold Edition, Regular, and the Alien demo.
+(The Marine and Predator demos are a bit older and might not work.)
+
+
+At least with the Gold edition, a number of files are encoded on the CD. So
+you would need to install the game in Windows (VMware works also) in order
+to get this to work.  WINE will not work because the CD Check fails.
+
+
+Currently, all AvP files and directories need to be lowercase, and the
+program ran from the directory with all the game data (language.txt,
+avp_huds, avp_rifs, fastfile).  zakk recommends
+http://blemished.net/chcase.html for renaming the files.
+
+
+Apparantly AvP Gold is no longer available at most places.  I had ordered my
+copy May 2001 from http://www.dragon.ca, but they no longer list it. 
+Try searching http://www.amazon.com, http://www.ebgames.com, 
+http://www.ebay.com, or the bargin bin at your local computer store.
+
+
+It is unknown if the Mac Gold Edition will work with this (I'd be interested
+in knowing if it does or not).
+
+
+The full motion sequences cannot be played because they are encoded with
+proprietary codecs (Bink and Smacker - http://www.radgametools.com).  But I 
+do not think they will be greatly missed.
+
+
+More information about the game and the series can be found at
+http://www.avpnews.com.
+
+
+Last, but definitely not least:
+Thanks go out to Chuck Mason for testing and the OpenAL code, Dan Olson for
+trying the code out with the Regular version, Zachary 'zakk' Slater for
+providing tons of feedback, Tim Beckmann for sending patches, and Ryan C. 
+Gordon for hosting this project.
+
+---
+Steven Fuller <relnev@icculus.org>

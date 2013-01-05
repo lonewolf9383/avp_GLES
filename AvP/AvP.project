@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="AvP" InternalType="Console">
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00040001N0005Debug0000000000000001N0010GLES Debug0000000000000001N0013Pandora Debug0000000000000001N0015pandora release000000000000]]>
+    </Plugin>
+  </Plugins>
+  <Description/>
+  <Dependencies/>
+  <VirtualDirectory Name="src">
+    <File Name="../src/cdplayer.c"/>
+    <File Name="../src/files.c"/>
+    <File Name="../src/fmv.c"/>
+    <File Name="../src/frustum.c"/>
+    <File Name="../src/kshape.c"/>
+    <File Name="../src/main.c"/>
+    <File Name="../src/map.c"/>
+    <File Name="../src/mathline.c"/>
+    <File Name="../src/maths.c"/>
+    <File Name="../src/md5.c"/>
+    <File Name="../src/mem3dc.c"/>
+    <File Name="../src/mem3dcpp.cpp"/>
+    <File Name="../src/menus.c"/>
+    <File Name="../src/module.c"/>
+    <File Name="../src/morph.c"/>
+    <File Name="../src/net.c"/>
+    <File Name="../src/object.c"/>
+    <File Name="../src/openal.c"/>
+    <File Name="../src/shpanim.c"/>
+    <File Name="../src/sphere.c"/>
+    <File Name="../src/stubs.c"/>
+    <File Name="../src/tables.c"/>
+    <File Name="../src/vdb.c"/>
+    <File Name="../src/version.c"/>
+    <File Name="../src/winapi.c"/>
+    <File Name="../src/cdplayer.h"/>
+    <File Name="../src/files.h"/>
+    <File Name="../src/fixer.h"/>
+    <File Name="../src/fmv.h"/>
+    <File Name="../src/frustum.h"/>
+    <File Name="../src/kshape.h"/>
+    <File Name="../src/maths.h"/>
+    <File Name="../src/md5.h"/>
+    <File Name="../src/net.h"/>
+    <File Name="../src/opengl.h"/>
+    <File Name="../src/sphere.h"/>
+    <File Name="../src/version.h"/>
+    <File Name="../src/opengl.c"/>
+    <VirtualDirectory Name="Input">
+      <File Name="../src/Input/JoystickInput.c"/>
+      <File Name="../src/Input/MenuInput.c"/>
+      <File Name="../src/Input/usr_io.c"/>
+      <File Name="../src/Input/usr_io.h"/>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <VirtualDirectory Name="avp">
+    <File Name="../src/avp/ai_sight.c"/>
+    <File Name="../src/avp/avpview.c"/>
+    <File Name="../src/avp/bh_agun.c"/>
+    <File Name="../src/avp/bh_ais.c"/>
+    <File Name="../src/avp/bh_alien.c"/>
+    <File Name="../src/avp/bh_binsw.c"/>
+    <File Name="../src/avp/bh_cable.c"/>
+    <File Name="../src/avp/bh_corpse.c"/>
+    <File Name="../src/avp/bh_deathvol.c"/>
+    <File Name="../src/avp/bh_debri.c"/>
+    <File Name="../src/avp/bh_dummy.c"/>
+    <File Name="../src/avp/bh_fan.c"/>
+    <File Name="../src/avp/bh_far.c"/>
+    <File Name="../src/avp/bh_fhug.c"/>
+    <File Name="../src/avp/bh_gener.c"/>
+    <File Name="../src/avp/bh_ldoor.c"/>
+    <File Name="../src/avp/bh_lift.c"/>
+    <File Name="../src/avp/bh_light.c"/>
+    <File Name="../src/avp/bh_lnksw.c"/>
+    <File Name="../src/avp/bh_ltfx.c"/>
+    <File Name="../src/avp/bh_marin.c"/>
+    <File Name="../src/avp/bh_mission.c"/>
+    <File Name="../src/avp/bh_near.c"/>
+    <File Name="../src/avp/bh_pargen.c"/>
+    <File Name="../src/avp/bh_plachier.c"/>
+    <File Name="../src/avp/bh_plift.c"/>
+    <File Name="../src/avp/bh_pred.c"/>
+    <File Name="../src/avp/bh_queen.c"/>
+    <File Name="../src/avp/bh_rubberduck.c"/>
+    <File Name="../src/avp/bh_selfdest.c"/>
+    <File Name="../src/avp/bh_snds.c"/>
+    <File Name="../src/avp/bh_spcl.c"/>
+    <File Name="../src/avp/bh_swdor.c"/>
+    <File Name="../src/avp/bh_track.c"/>
+    <File Name="../src/avp/bh_types.c"/>
+    <File Name="../src/avp/bh_videoscreen.c"/>
+    <File Name="../src/avp/bh_waypt.c"/>
+    <File Name="../src/avp/bh_weap.c"/>
+    <File Name="../src/avp/bh_xeno.c"/>
+    <File Name="../src/avp/bonusabilities.c"/>
+    <File Name="../src/avp/cconvars.cpp"/>
+    <File Name="../src/avp/cdtrackselection.cpp"/>
+    <File Name="../src/avp/cheatmodes.c"/>
+    <File Name="../src/avp/comp_map.c"/>
+    <File Name="../src/avp/comp_shp.c"/>
+    <File Name="../src/avp/consolelog.cpp"/>
+    <File Name="../src/avp/davehook.cpp"/>
+    <File Name="../src/avp/deaths.c"/>
+    <File Name="../src/avp/decal.c"/>
+    <File Name="../src/avp/detaillevels.c"/>
+    <File Name="../src/avp/dynamics.c"/>
+    <File Name="../src/avp/dynblock.c"/>
+    <File Name="../src/avp/equipmnt.c"/>
+    <File Name="../src/avp/extents.c"/>
+    <File Name="../src/avp/game.c"/>
+    <File Name="../src/avp/gamecmds.cpp"/>
+    <File Name="../src/avp/game_statistics.c"/>
+    <File Name="../src/avp/gamevars.cpp"/>
+    <File Name="../src/avp/hmodel.c"/>
+    <File Name="../src/avp/hud.c"/>
+    <File Name="../src/avp/inventry.c"/>
+    <File Name="../src/avp/language.c"/>
+    <File Name="../src/avp/lighting.c"/>
+    <File Name="../src/avp/load_shp.c"/>
+    <File Name="../src/avp/los.c"/>
+    <File Name="../src/avp/mempool.c"/>
+    <File Name="../src/avp/messagehistory.c"/>
+    <File Name="../src/avp/missions.cpp"/>
+    <File Name="../src/avp/movement.c"/>
+    <File Name="../src/avp/paintball.c"/>
+    <File Name="../src/avp/particle.c"/>
+    <File Name="../src/avp/pfarlocs.c"/>
+    <File Name="../src/avp/pheromon.c"/>
+    <File Name="../src/avp/player.c"/>
+    <File Name="../src/avp/pmove.c"/>
+    <File Name="../src/avp/psnd.c"/>
+    <File Name="../src/avp/psndproj.c"/>
+    <File Name="../src/avp/pvisible.c"/>
+    <File Name="../src/avp/savegame.c"/>
+    <File Name="../src/avp/scream.cpp"/>
+    <File Name="../src/avp/secstats.c"/>
+    <File Name="../src/avp/sfx.c"/>
+    <File Name="../src/avp/stratdef.c"/>
+    <File Name="../src/avp/targeting.c"/>
+    <File Name="../src/avp/track.c"/>
+    <File Name="../src/avp/triggers.c"/>
+    <File Name="../src/avp/weapons.c"/>
+    <VirtualDirectory Name="win95">
+      <File Name="../src/avp/win95/avpchunk.cpp"/>
+      <File Name="../src/avp/win95/cheat.c"/>
+      <File Name="../src/avp/win95/chtcodes.cpp"/>
+      <File Name="../src/avp/win95/d3d_hud.cpp"/>
+      <File Name="../src/avp/win95/ddplat.cpp"/>
+      <File Name="../src/avp/win95/endianio.c"/>
+      <File Name="../src/avp/win95/ffread.cpp"/>
+      <File Name="../src/avp/win95/ffstdio.cpp"/>
+      <File Name="../src/avp/win95/gammacontrol.cpp"/>
+      <File Name="../src/avp/win95/hierplace.cpp"/>
+      <File Name="../src/avp/win95/iofocus.cpp"/>
+      <File Name="../src/avp/win95/jsndsup.cpp"/>
+      <File Name="../src/avp/win95/kzsort.c"/>
+      <File Name="../src/avp/win95/langplat.c"/>
+      <File Name="../src/avp/win95/modcmds.cpp"/>
+      <File Name="../src/avp/win95/npcsetup.cpp"/>
+      <File Name="../src/avp/win95/objsetup.cpp"/>
+      <File Name="../src/avp/win95/pathchnk.cpp"/>
+      <File Name="../src/avp/win95/platsup.c"/>
+      <File Name="../src/avp/win95/pldghost.c"/>
+      <File Name="../src/avp/win95/pldnet.c"/>
+      <File Name="../src/avp/win95/projload.cpp"/>
+      <File Name="../src/avp/win95/scrshot.cpp"/>
+      <File Name="../src/avp/win95/strachnk.cpp"/>
+      <File Name="../src/avp/win95/system.c"/>
+      <File Name="../src/avp/win95/vision.c"/>
+      <VirtualDirectory Name="frontend">
+        <File Name="../src/avp/win95/frontend/avp_envinfo.c"/>
+        <File Name="../src/avp/win95/frontend/avp_intro.cpp"/>
+        <File Name="../src/avp/win95/frontend/avp_menudata.c"/>
+        <File Name="../src/avp/win95/frontend/avp_menus.c"/>
+        <File Name="../src/avp/win95/frontend/avp_mp_config.cpp"/>
+        <File Name="../src/avp/win95/frontend/avp_userprofile.cpp"/>
+        <File Name="../src/avp/win95/frontend/avp_envinfo.h"/>
+        <File Name="../src/avp/win95/frontend/avp_intro.h"/>
+        <File Name="../src/avp/win95/frontend/avp_menudata.h"/>
+        <File Name="../src/avp/win95/frontend/avp_menugfx.hpp"/>
+        <File Name="../src/avp/win95/frontend/avp_menus.h"/>
+        <File Name="../src/avp/win95/frontend/avp_mp_config.h"/>
+        <File Name="../src/avp/win95/frontend/avp_userprofile.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="gadgets">
+        <File Name="../src/avp/win95/gadgets/ahudgadg.cpp"/>
+        <File Name="../src/avp/win95/gadgets/conscmnd.cpp"/>
+        <File Name="../src/avp/win95/gadgets/conssym.cpp"/>
+        <File Name="../src/avp/win95/gadgets/consvar.cpp"/>
+        <File Name="../src/avp/win95/gadgets/gadget.cpp"/>
+        <File Name="../src/avp/win95/gadgets/hudgadg.cpp"/>
+        <File Name="../src/avp/win95/gadgets/rootgadg.cpp"/>
+        <File Name="../src/avp/win95/gadgets/teletype.cpp"/>
+        <File Name="../src/avp/win95/gadgets/textexp.cpp"/>
+        <File Name="../src/avp/win95/gadgets/textin.cpp"/>
+        <File Name="../src/avp/win95/gadgets/t_ingadg.cpp"/>
+        <File Name="../src/avp/win95/gadgets/trepgadg.cpp"/>
+      </VirtualDirectory>
+      <File Name="../src/avp/win95/avpchunk.hpp"/>
+      <File Name="../src/avp/win95/avpreg.hpp"/>
+      <File Name="../src/avp/win95/bmp2.h"/>
+      <File Name="../src/avp/win95/cheat.h"/>
+      <File Name="../src/avp/win95/d3d_hud.h"/>
+      <File Name="../src/avp/win95/d3d_render.h"/>
+      <File Name="../src/avp/win95/datatype.h"/>
+      <File Name="../src/avp/win95/dp_func.h"/>
+      <File Name="../src/avp/win95/dplayext.h"/>
+      <File Name="../src/avp/win95/endianio.h"/>
+      <File Name="../src/avp/win95/ffread.hpp"/>
+      <File Name="../src/avp/win95/ffstdio.h"/>
+      <File Name="../src/avp/win95/font.h"/>
+      <File Name="../src/avp/win95/gameplat.h"/>
+      <File Name="../src/avp/win95/gammacontrol.h"/>
+      <File Name="../src/avp/win95/heap_tem.hpp"/>
+      <File Name="../src/avp/win95/hierplace.hpp"/>
+      <File Name="../src/avp/win95/hud_data.h"/>
+      <File Name="../src/avp/win95/hudgfx.h"/>
+      <File Name="../src/avp/win95/hud_layout.h"/>
+      <File Name="../src/avp/win95/iofocus.h"/>
+      <File Name="../src/avp/win95/jsndsup.h"/>
+      <File Name="../src/avp/win95/kzsort.h"/>
+      <File Name="../src/avp/win95/modcmds.hpp"/>
+      <File Name="../src/avp/win95/multmenu.h"/>
+      <File Name="../src/avp/win95/npcsetup.h"/>
+      <File Name="../src/avp/win95/objsetup.hpp"/>
+      <File Name="../src/avp/win95/pathchnk.hpp"/>
+      <File Name="../src/avp/win95/pcmenus.h"/>
+      <File Name="../src/avp/win95/pldghost.h"/>
+      <File Name="../src/avp/win95/pldnet.h"/>
+      <File Name="../src/avp/win95/progress_bar.h"/>
+      <File Name="../src/avp/win95/projload.hpp"/>
+      <File Name="../src/avp/win95/psndplat.h"/>
+      <File Name="../src/avp/win95/scrshot.hpp"/>
+      <File Name="../src/avp/win95/strachnk.hpp"/>
+      <File Name="../src/avp/win95/system.h"/>
+      <File Name="../src/avp/win95/vision.h"/>
+      <File Name="../src/avp/win95/vmanpset.h"/>
+      <File Name="../src/avp/win95/progress_bar.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Shapes">
+      <File Name="../src/avp/shapes/cube.c"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="support">
+      <File Name="../src/avp/support/consbind.cpp"/>
+      <File Name="../src/avp/support/consbtch.cpp"/>
+      <File Name="../src/avp/support/coordstr.cpp"/>
+      <File Name="../src/avp/support/daemon.cpp"/>
+      <File Name="../src/avp/support/indexfnt.cpp"/>
+      <File Name="../src/avp/support/r2base.cpp"/>
+      <File Name="../src/avp/support/r2pos666.cpp"/>
+      <File Name="../src/avp/support/reflist.cpp"/>
+      <File Name="../src/avp/support/refobj.cpp"/>
+      <File Name="../src/avp/support/rentrntq.cpp"/>
+      <File Name="../src/avp/support/scstring.cpp"/>
+      <File Name="../src/avp/support/strtab.cpp"/>
+      <File Name="../src/avp/support/strutil.c"/>
+      <File Name="../src/avp/support/trig666.cpp"/>
+      <File Name="../src/avp/support/wrapstr.cpp"/>
+      <File Name="../src/avp/support/command.hpp"/>
+      <File Name="../src/avp/support/consbind.hpp"/>
+      <File Name="../src/avp/support/consbtch.hpp"/>
+      <File Name="../src/avp/support/coordstr.hpp"/>
+      <File Name="../src/avp/support/daemon.h"/>
+      <File Name="../src/avp/support/dcontext.hpp"/>
+      <File Name="../src/avp/support/indexfnt.hpp"/>
+      <File Name="../src/avp/support/ourbool.h"/>
+      <File Name="../src/avp/support/r2base.h"/>
+      <File Name="../src/avp/support/r2pos666.hpp"/>
+      <File Name="../src/avp/support/reflist.hpp"/>
+      <File Name="../src/avp/support/refobj.hpp"/>
+      <File Name="../src/avp/support/rentrntq.h"/>
+      <File Name="../src/avp/support/scstring.hpp"/>
+      <File Name="../src/avp/support/strtab.hpp"/>
+      <File Name="../src/avp/support/strutil.h"/>
+      <File Name="../src/avp/support/tallfont.hpp"/>
+      <File Name="../src/avp/support/trig666.hpp"/>
+      <File Name="../src/avp/support/wrapstr.hpp"/>
+    </VirtualDirectory>
+    <File Name="../src/avp/ai_sight.h"/>
+    <File Name="../src/avp/avpview.h"/>
+    <File Name="../src/avp/bh_agun.h"/>
+    <File Name="../src/avp/bh_ais.h"/>
+    <File Name="../src/avp/bh_alien.h"/>
+    <File Name="../src/avp/bh_binsw.h"/>
+    <File Name="../src/avp/bh_cable.h"/>
+    <File Name="../src/avp/bh_corpse.h"/>
+    <File Name="../src/avp/bh_deathvol.h"/>
+    <File Name="../src/avp/bh_debri.h"/>
+    <File Name="../src/avp/bh_dummy.h"/>
+    <File Name="../src/avp/bh_fan.h"/>
+    <File Name="../src/avp/bh_far.h"/>
+    <File Name="../src/avp/bh_fhug.h"/>
+    <File Name="../src/avp/bh_gener.h"/>
+    <File Name="../src/avp/bh_ldoor.h"/>
+    <File Name="../src/avp/bh_lift.h"/>
+    <File Name="../src/avp/bh_light.h"/>
+    <File Name="../src/avp/bh_lnksw.h"/>
+    <File Name="../src/avp/bh_ltfx.h"/>
+    <File Name="../src/avp/bh_marin.h"/>
+    <File Name="../src/avp/bh_mission.h"/>
+    <File Name="../src/avp/bh_near.h"/>
+    <File Name="../src/avp/bh_paq.h"/>
+    <File Name="../src/avp/bh_pargen.h"/>
+    <File Name="../src/avp/bh_plachier.h"/>
+    <File Name="../src/avp/bh_plift.h"/>
+    <File Name="../src/avp/bh_pred.h"/>
+    <File Name="../src/avp/bh_queen.h"/>
+    <File Name="../src/avp/bh_rubberduck.h"/>
+    <File Name="../src/avp/bh_selfdest.h"/>
+    <File Name="../src/avp/bh_snds.h"/>
+    <File Name="../src/avp/bh_spcl.h"/>
+    <File Name="../src/avp/bh_swdor.h"/>
+    <File Name="../src/avp/bh_track.h"/>
+    <File Name="../src/avp/bh_types.h"/>
+    <File Name="../src/avp/bh_videoscreen.h"/>
+    <File Name="../src/avp/bh_waypt.h"/>
+    <File Name="../src/avp/bh_weap.h"/>
+    <File Name="../src/avp/bh_xeno.h"/>
+    <File Name="../src/avp/bonusabilities.h"/>
+    <File Name="../src/avp/cdtrackselection.h"/>
+    <File Name="../src/avp/cheatmodes.h"/>
+    <File Name="../src/avp/comp_shp.h"/>
+    <File Name="../src/avp/consolelog.hpp"/>
+    <File Name="../src/avp/davehook.h"/>
+    <File Name="../src/avp/decal.h"/>
+    <File Name="../src/avp/detaillevels.h"/>
+    <File Name="../src/avp/dynamics.h"/>
+    <File Name="../src/avp/dynblock.h"/>
+    <File Name="../src/avp/equates.h"/>
+    <File Name="../src/avp/equipmnt.h"/>
+    <File Name="../src/avp/extents.h"/>
+    <File Name="../src/avp/game.h"/>
+    <File Name="../src/avp/gamedef.h"/>
+    <File Name="../src/avp/game_statistics.h"/>
+    <File Name="../src/avp/hmodel.h"/>
+    <File Name="../src/avp/hud.h"/>
+    <File Name="../src/avp/huddefs.h"/>
+    <File Name="../src/avp/inventry.h"/>
+    <File Name="../src/avp/langenum.h"/>
+    <File Name="../src/avp/language.h"/>
+    <File Name="../src/avp/lighting.h"/>
+    <File Name="../src/avp/load_shp.h"/>
+    <File Name="../src/avp/los.h"/>
+    <File Name="../src/avp/ltfx_exp.h"/>
+    <File Name="../src/avp/mempool.h"/>
+    <File Name="../src/avp/messagehistory.h"/>
+    <File Name="../src/avp/missions.hpp"/>
+    <File Name="../src/avp/paintball.h"/>
+    <File Name="../src/avp/particle.h"/>
+    <File Name="../src/avp/pfarlocs.h"/>
+    <File Name="../src/avp/pheromon.h"/>
+    <File Name="../src/avp/player.h"/>
+    <File Name="../src/avp/pmove.h"/>
+    <File Name="../src/avp/projfont.h"/>
+    <File Name="../src/avp/projtext.h"/>
+    <File Name="../src/avp/psnd.h"/>
+    <File Name="../src/avp/psndproj.h"/>
+    <File Name="../src/avp/pvisible.h"/>
+    <File Name="../src/avp/savegame.h"/>
+    <File Name="../src/avp/scream.h"/>
+    <File Name="../src/avp/sequnces.h"/>
+    <File Name="../src/avp/sfx.h"/>
+    <File Name="../src/avp/stratdef.h"/>
+    <File Name="../src/avp/targeting.h"/>
+    <File Name="../src/avp/track.h"/>
+    <File Name="../src/avp/triggers.h"/>
+    <File Name="../src/avp/weapons.h"/>
+    <File Name="../src/oglfunc.c"/>
+    <File Name="../src/oglfunc.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="win95">
+    <File Name="../src/win95/animchnk.cpp"/>
+    <File Name="../src/win95/animobs.cpp"/>
+    <File Name="../src/win95/awbmpld.cpp"/>
+    <File Name="../src/win95/awiffld.cpp"/>
+    <File Name="../src/win95/awpnmld.cpp"/>
+    <File Name="../src/win95/awtexld.cpp"/>
+    <File Name="../src/win95/bmpnames.cpp"/>
+    <File Name="../src/win95/chnkload.cpp"/>
+    <File Name="../src/win95/chnktexi.cpp"/>
+    <File Name="../src/win95/chnktype.cpp"/>
+    <File Name="../src/win95/chunk.cpp"/>
+    <File Name="../src/win95/chunkpal.cpp"/>
+    <File Name="../src/win95/db.c"/>
+    <File Name="../src/win95/debuglog.cpp"/>
+    <File Name="../src/win95/dummyobjectchunk.cpp"/>
+    <File Name="../src/win95/enumchnk.cpp"/>
+    <File Name="../src/win95/enumsch.cpp"/>
+    <File Name="../src/win95/envchunk.cpp"/>
+    <File Name="../src/win95/fail.c"/>
+    <File Name="../src/win95/fragchnk.cpp"/>
+    <File Name="../src/win95/gsprchnk.cpp"/>
+    <File Name="../src/win95/hierchnk.cpp"/>
+    <File Name="../src/win95/huffman.cpp"/>
+    <File Name="../src/win95/iff.cpp"/>
+    <File Name="../src/win95/iff_ilbm.cpp"/>
+    <File Name="../src/win95/ilbm_ext.cpp"/>
+    <File Name="../src/win95/io.c"/>
+    <File Name="../src/win95/list_tem.cpp"/>
+    <File Name="../src/win95/ltchunk.cpp"/>
+    <File Name="../src/win95/media.cpp"/>
+    <File Name="../src/win95/mishchnk.cpp"/>
+    <File Name="../src/win95/obchunk.cpp"/>
+    <File Name="../src/win95/oechunk.cpp"/>
+    <File Name="../src/win95/our_mem.c"/>
+    <File Name="../src/win95/plat_shp.c"/>
+    <File Name="../src/win95/plspecfn.c"/>
+    <File Name="../src/win95/shpchunk.cpp"/>
+    <File Name="../src/win95/sndchunk.cpp"/>
+    <File Name="../src/win95/sprchunk.cpp"/>
+    <File Name="../src/win95/string.cpp"/>
+    <File Name="../src/win95/texio.c"/>
+    <File Name="../src/win95/toolchnk.cpp"/>
+    <File Name="../src/win95/txioctrl.cpp"/>
+    <File Name="../src/win95/wpchunk.cpp"/>
+    <File Name="../src/win95/zsp.cpp"/>
+    <File Name="../src/win95/alt_tab.h"/>
+    <File Name="../src/win95/animchnk.hpp"/>
+    <File Name="../src/win95/animobs.hpp"/>
+    <File Name="../src/win95/aw.h"/>
+    <File Name="../src/win95/awtexld.h"/>
+    <File Name="../src/win95/awtexld.hpp"/>
+    <File Name="../src/win95/bmpnames.hpp"/>
+    <File Name="../src/win95/cd_player.h"/>
+    <File Name="../src/win95/chnkload.h"/>
+    <File Name="../src/win95/chnkload.hpp"/>
+    <File Name="../src/win95/chnktexi.h"/>
+    <File Name="../src/win95/chnktype.hpp"/>
+    <File Name="../src/win95/chunk.hpp"/>
+    <File Name="../src/win95/chunkpal.hpp"/>
+    <File Name="../src/win95/d3_func.h"/>
+    <File Name="../src/win95/db.h"/>
+    <File Name="../src/win95/debuglog.h"/>
+    <File Name="../src/win95/debuglog.hpp"/>
+    <File Name="../src/win95/dummyobjectchunk.hpp"/>
+    <File Name="../src/win95/dxlog.h"/>
+    <File Name="../src/win95/enumchnk.hpp"/>
+    <File Name="../src/win95/enumsch.hpp"/>
+    <File Name="../src/win95/envchunk.hpp"/>
+    <File Name="../src/win95/fail.h"/>
+    <File Name="../src/win95/fragchnk.hpp"/>
+    <File Name="../src/win95/gsprchnk.hpp"/>
+    <File Name="../src/win95/hash_tem.hpp"/>
+    <File Name="../src/win95/hierchnk.hpp"/>
+    <File Name="../src/win95/huffman.hpp"/>
+    <File Name="../src/win95/iff.hpp"/>
+    <File Name="../src/win95/iff_ilbm.hpp"/>
+    <File Name="../src/win95/ilbm_ext.hpp"/>
+    <File Name="../src/win95/inline.h"/>
+    <File Name="../src/win95/list_tem.hpp"/>
+    <File Name="../src/win95/ltchunk.hpp"/>
+    <File Name="../src/win95/media.hpp"/>
+    <File Name="../src/win95/mishchnk.hpp"/>
+    <File Name="../src/win95/mmx_math.h"/>
+    <File Name="../src/win95/obchunk.hpp"/>
+    <File Name="../src/win95/oechunk.h"/>
+    <File Name="../src/win95/ourasert.h"/>
+    <File Name="../src/win95/platform.h"/>
+    <File Name="../src/win95/plat_shp.h"/>
+    <File Name="../src/win95/showcmds.h"/>
+    <File Name="../src/win95/shpanim.h"/>
+    <File Name="../src/win95/shpchunk.hpp"/>
+    <File Name="../src/win95/sndchunk.hpp"/>
+    <File Name="../src/win95/sprchunk.hpp"/>
+    <File Name="../src/win95/string.hpp"/>
+    <File Name="../src/win95/toolchnk.hpp"/>
+    <File Name="../src/win95/txioctrl.h"/>
+    <File Name="../src/win95/videomodes.h"/>
+    <File Name="../src/win95/wpchunk.hpp"/>
+    <File Name="../src/win95/zsp.hpp"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="Video">
+    <File Name="../src/Video/VideoModes.c"/>
+    <File Name="../src/Video/OpenGLInit.c"/>
+    <File Name="../src/Video/OpenGLInit.h"/>
+    <File Name="../src/Video/VideoModes.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="Includes">
+    <File Name="../src/include/3dc.h"/>
+    <File Name="../src/include/mem3dc.h"/>
+    <File Name="../src/include/module.h"/>
+    <File Name="../src/include/prototyp.h"/>
+    <File Name="../src/include/shape.h"/>
+  </VirtualDirectory>
+  <Settings Type="Executable">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+        <Library Value="SDL_net"/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="g++ pandora" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g -m32" C_Options="-g" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
+        <IncludePath Value="."/>
+        <IncludePath Value="../src"/>
+        <IncludePath Value="../src/avp"/>
+        <IncludePath Value="../src/include"/>
+        <IncludePath Value="../src/win95"/>
+        <IncludePath Value="../src/avp/"/>
+        <IncludePath Value="../src/avp/shapes"/>
+        <IncludePath Value="../src/avp/support"/>
+        <IncludePath Value="../src/avp/win95"/>
+        <IncludePath Value="../src/avp/win95/frontend"/>
+        <IncludePath Value="../src/avp/win95/gadgets"/>
+      </Compiler>
+      <Linker Options="" Required="yes">
+        <LibraryPath Value="/home/graham/Projects/Pandora/GLES/SDKPackage/Builds/OGLES/LinuxPC/Lib"/>
+        <Library Value="SDL"/>
+        <Library Value="openal"/>
+        <Library Value="stdc++"/>
+      </Linker>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="/home/graham/avp/$(ProjectName)" IntermediateDirectory="./Debug" Command="/home/graham/avp/$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="/home/graham/avp" PauseExecWhenProcTerminates="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[
+      
+      
+      
+      
+      
+      
+      ]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="GLES Debug" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g;" C_Options="-g;" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
+        <IncludePath Value="."/>
+        <IncludePath Value="../src"/>
+        <IncludePath Value="../src/avp"/>
+        <IncludePath Value="../src/include"/>
+        <IncludePath Value="../src/win95"/>
+        <IncludePath Value="../src/avp/"/>
+        <IncludePath Value="../src/avp/shapes"/>
+        <IncludePath Value="../src/avp/support"/>
+        <IncludePath Value="../src/avp/win95"/>
+        <IncludePath Value="../src/avp/win95/frontend"/>
+        <IncludePath Value="../src/avp/win95/gadgets"/>
+        <Preprocessor Value="GLES1"/>
+        <Preprocessor Value="SDL_VIDEO_DRIVER_X11"/>
+      </Compiler>
+      <Linker Options="" Required="yes">
+        <Library Value="openal"/>
+        <Library Value="SDL"/>
+        <Library Value="EGL"/>
+      </Linker>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="/Games/avp/$(ProjectName)" IntermediateDirectory="./GLES/Debug" Command="/Games/avp/$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="/Games/avp" PauseExecWhenProcTerminates="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[
+      
+      
+      
+      
+      
+      
+      
+      ]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Pandora Debug" CompilerType="g++ pandora" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g;$(shell sdl-config --cflags)" C_Options="-g;$(shell sdl-config --cflags)" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
+        <IncludePath Value="."/>
+        <IncludePath Value="../src"/>
+        <IncludePath Value="../src/avp"/>
+        <IncludePath Value="../src/include"/>
+        <IncludePath Value="../src/win95"/>
+        <IncludePath Value="../src/avp/"/>
+        <IncludePath Value="../src/avp/shapes"/>
+        <IncludePath Value="../src/avp/support"/>
+        <IncludePath Value="../src/avp/win95"/>
+        <IncludePath Value="../src/avp/win95/frontend"/>
+        <IncludePath Value="../src/avp/win95/gadgets"/>
+        <Preprocessor Value="GLES1"/>
+      </Compiler>
+      <Linker Options="" Required="yes">
+        <Library Value="SDL"/>
+        <Library Value="openal"/>
+        <Library Value="pthread"/>
+        <Library Value="ts"/>
+        <Library Value="EGL"/>
+        <Library Value="X11"/>
+      </Linker>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="./Pandora/avpD" IntermediateDirectory="./Pandora/Debug" Command="/media/E81C41071C40D26C/avp/AvP/Pandora/avpD" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="" PauseExecWhenProcTerminates="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[
+      
+      
+      
+      
+      
+      
+      ]]>
+      </Environment>
+      <Debugger IsRemote="yes" RemoteHostName="192.168.1.50" RemoteHostPort="3335" DebuggerPath="/usr/local/angstrom/arm/bin/gdb">
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="" C_Options="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="-O2" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/$(ProjectName)" IntermediateDirectory="./Release" Command="./$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[
+      
+      
+      
+      
+      
+      
+      
+      ]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="pandora release" CompilerType="pandora g++" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-O3 $(shell sdl-config --cflags) -mcpu=cortex-a8 -mfpu=neon -ftree-vectorize -mfloat-abi=softfp -ffast-math -fsingle-precision-constant" C_Options="-O3 $(shell sdl-config --cflags) -mcpu=cortex-a8 -mfpu=neon -ftree-vectorize -mfloat-abi=softfp -ffast-math -fsingle-precision-constant" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
+        <IncludePath Value="."/>
+        <IncludePath Value="../src"/>
+        <IncludePath Value="../src/avp"/>
+        <IncludePath Value="../src/include"/>
+        <IncludePath Value="../src/win95"/>
+        <IncludePath Value="../src/avp/"/>
+        <IncludePath Value="../src/avp/shapes"/>
+        <IncludePath Value="../src/avp/support"/>
+        <IncludePath Value="../src/avp/win95"/>
+        <IncludePath Value="../src/avp/win95/frontend"/>
+        <IncludePath Value="../src/avp/win95/gadgets"/>
+        <Preprocessor Value="GLES1"/>
+      </Compiler>
+      <Linker Options="" Required="yes">
+        <Library Value="SDL"/>
+        <Library Value="openal"/>
+        <Library Value="pthread"/>
+        <Library Value="ts"/>
+        <Library Value="X11"/>
+        <Library Value="EGL"/>
+      </Linker>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="./Pandora/avp" IntermediateDirectory="./Pandora/Release" Command="/media/E81C41071C40D26C/avp/AvP/Pandora/avpD" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="" PauseExecWhenProcTerminates="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="yes" RemoteHostName="192.168.1.50" RemoteHostPort="3335" DebuggerPath="/usr/local/angstrom/arm/bin/gdb">
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+</CodeLite_Project>

@@ -1,0 +1,23 @@
+Aliens vs Predator GLES 1 modified code (For OpenPandora console) - http://github.com/gwattsforever/avp_GLES
+------------------------
+
+This is an unofficial Linux/Open Pandora port of the Fox Interactive / Rebellion
+Developments game, Aliens Versus Predator.
+
+This code is based on the code released @ http://icculus.org/avp/ The original code ported avp to work using opengl on linux.
+
+This code has been written to replace all openGL calls with GLES 1 calls When 'GLES' is defined during compile. 
+The primary purpose for this change was to get it running on the OpenPandora console (www.openpandora.org). There is no reason however why this should not work on other GLES enabled devices. The code is however incomplete (but playable)
+
+OTHER CHANGES / FEATURES
+
+	Support for a second joystick axis.
+	Implemented SDL.Net layer to allow/re-enable multiplayer gaming over a network (limited testing!).
+	Other tweaks to allow the game to run on the openpandora arm based processor
+
+State
+
+The code should compile to run on Windows / linux (CodeLite.proj file included) and OpenPandora (you will need to setup the cross compile tools in codelite and make sure you include the -d GLES to compile correctly.
+There are numerous bugs that i have not had time to fix. This includes a bug when rendering text in game (uv's are messed up, could be something straight forward in the render text function).
+If you are planning on compiling for the open pandora please see the README.pandora
+	

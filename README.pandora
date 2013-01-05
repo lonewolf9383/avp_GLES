@@ -1,0 +1,33 @@
+First read README for an overview. This readme contains openpandora specific issues.
+
+
+
+CODE STATE
+
+The code currently compiles fine however there is currently one Gotcha that i havent had time to resolve. In order to work you will need the SDL lib built based on cpusjastes 1.2.13_gles @ https://github.com/Cpasjuste/sdl-1.2.13_gles This code contains changes to support gles within SDL. 
+I have had this compiled and running on an older firmware of the pandora but since updating its not worked out so well.
+ 
+Although the game loads a mission as soon as you hit a key or give any input the game hangs (its a good idea to run it in a window as sometimes that can prevent a need for full reboot of the console!). I originally found this to be the result of the c libs that were linked into sdl (different c lib versions across dll boundaries perhaps?). I solved this previously by statically linking everything into to SDL.so lib file which will probably make some devs shudder (i felt dirty too! :$).
+Its possible that only the c/c++ libs need to be statically linked but i havent had a chance to test the theory fully. It may also just be a conflict between the toolchains version of the libs and the consoles. I have had no time to test this theory out. 
+Of course you might be able to get around all this if you can port it to SDL 2.3 but who knows...
+
+
+
+RUNNING IT ON THE CONSOLE
+
+To run it on the console i placed the SDL and openal .so files into the same directory as the executable. All data files must be copied from the original avp release folder and renamed to be lower case.
+I then created a simple script to cd to the directory and run the following:
+
+export LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH
+./avpD
+
+
+
+PERFORMANCE + LIBS
+
+Once in game performance varies but is playable at least for the marine and most problematic at the moment appears to be the audio. You will need to build the openal soft lib for pandora and make sure you do a proper optimised version (see the optmisations in the avp codelite project for an idea of the values i used (original retrieved from the openpandora wiki if i recall correctly...)
+
+Sadly at the moment i just can not find the time to work on this project anymore so hopefully someone can pick-up the reins and get a proper release working. 
+So to whomever chooses to take this on i wish you the best of luck and hopefully less hair pulling than i suffered! :P
+
+Graham

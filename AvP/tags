@@ -1,0 +1,129 @@
+LightIntensityAtPoint	/home/graham/Programs/AvP/avp/src/opengl.c	/^int LightIntensityAtPoint(VECTORCH *pointPtr);$/;"	prototype	line:28	signature:(VECTORCH *pointPtr)	returns:int
+CurrTextureHandle	/home/graham/Programs/AvP/avp/src/opengl.c	/^static D3DTexture *CurrTextureHandle;$/;"	variable	line:48
+CurrentTranslucencyMode	/home/graham/Programs/AvP/avp/src/opengl.c	/^static enum TRANSLUCENCY_TYPE CurrentTranslucencyMode = TRANSLUCENCY_OFF;$/;"	variable	line:51	typeref:enum:TRANSLUCENCY_TYPE
+CurrentFilteringMode	/home/graham/Programs/AvP/avp/src/opengl.c	/^static enum FILTERING_MODE_ID CurrentFilteringMode = FILTERING_BILINEAR_OFF;$/;"	variable	line:52	typeref:enum:FILTERING_MODE_ID
+CurrentlyBoundTexture	/home/graham/Programs/AvP/avp/src/opengl.c	/^static D3DTexture *CurrentlyBoundTexture = NULL;$/;"	variable	line:53
+TA_MAXVERTICES	/home/graham/Programs/AvP/avp/src/opengl.c	/^#define TA_MAXVERTICES		2048$/;"	macro	line:55
+TA_MAXTRIANGLES	/home/graham/Programs/AvP/avp/src/opengl.c	/^#define TA_MAXTRIANGLES		2048$/;"	macro	line:56
+VertexArray	/home/graham/Programs/AvP/avp/src/opengl.c	/^typedef struct VertexArray$/;"	struct	line:62
+v	/home/graham/Programs/AvP/avp/src/opengl.c	/^	GLfloat v[4];$/;"	member	line:64	struct:VertexArray	access:public
+t	/home/graham/Programs/AvP/avp/src/opengl.c	/^	GLfloat t[3]; \/* 3rd float is padding *\/$/;"	member	line:66	struct:VertexArray	access:public
+c	/home/graham/Programs/AvP/avp/src/opengl.c	/^	GLubyte c[4];$/;"	member	line:68	struct:VertexArray	access:public
+VertexArray	/home/graham/Programs/AvP/avp/src/opengl.c	/^typedef struct VertexArray { 	GLfloat v[4]; 	 	GLfloat t[3]; \/* 3rd float is padding *\/ 	 	GLubyte c[4]; } VertexArray; $/;"	typedef	line:69	typeref:struct:VertexArray
+TriangleArray	/home/graham/Programs/AvP/avp/src/opengl.c	/^typedef struct TriangleArray$/;"	struct	line:71
+a	/home/graham/Programs/AvP/avp/src/opengl.c	/^	unsigned short a, b, c;$/;"	member	line:73	struct:TriangleArray	access:public
+b	/home/graham/Programs/AvP/avp/src/opengl.c	/^	unsigned short a, b, c;$/;"	member	line:73	struct:TriangleArray	access:public
+c	/home/graham/Programs/AvP/avp/src/opengl.c	/^	unsigned short a, b, c;$/;"	member	line:73	struct:TriangleArray	access:public
+TriangleArray	/home/graham/Programs/AvP/avp/src/opengl.c	/^typedef struct TriangleArray { 	unsigned short a, b, c; } TriangleArray; $/;"	typedef	line:74	typeref:struct:TriangleArray
+varr	/home/graham/Programs/AvP/avp/src/opengl.c	/^static VertexArray varr[TA_MAXVERTICES*2];$/;"	variable	line:76
+tarr	/home/graham/Programs/AvP/avp/src/opengl.c	/^static TriangleArray tarr[TA_MAXTRIANGLES*2];$/;"	variable	line:77
+varrp	/home/graham/Programs/AvP/avp/src/opengl.c	/^static VertexArray *varrp = varr;$/;"	variable	line:78
+tarrp	/home/graham/Programs/AvP/avp/src/opengl.c	/^static TriangleArray *tarrp = tarr;$/;"	variable	line:79
+varrc	/home/graham/Programs/AvP/avp/src/opengl.c	/^static int varrc, tarrc;$/;"	variable	line:80
+tarrc	/home/graham/Programs/AvP/avp/src/opengl.c	/^static int varrc, tarrc;$/;"	variable	line:80
+svarr	/home/graham/Programs/AvP/avp/src/opengl.c	/^static VertexArray *svarr = &varr[TA_MAXVERTICES], *svarrp = &varr[TA_MAXVERTICES];$/;"	variable	line:82
+svarrp	/home/graham/Programs/AvP/avp/src/opengl.c	/^static VertexArray *svarr = &varr[TA_MAXVERTICES], *svarrp = &varr[TA_MAXVERTICES];$/;"	variable	line:82
+starr	/home/graham/Programs/AvP/avp/src/opengl.c	/^static TriangleArray *starr = &tarr[TA_MAXTRIANGLES], *starrp = &tarr[TA_MAXTRIANGLES];$/;"	variable	line:83
+starrp	/home/graham/Programs/AvP/avp/src/opengl.c	/^static TriangleArray *starr = &tarr[TA_MAXTRIANGLES], *starrp = &tarr[TA_MAXTRIANGLES];$/;"	variable	line:83
+svarrc	/home/graham/Programs/AvP/avp/src/opengl.c	/^static unsigned short svarrc, starrc;$/;"	variable	line:84
+starrc	/home/graham/Programs/AvP/avp/src/opengl.c	/^static unsigned short svarrc, starrc;$/;"	variable	line:84
+SetTranslucencyMode	/home/graham/Programs/AvP/avp/src/opengl.c	/^static void SetTranslucencyMode(enum TRANSLUCENCY_TYPE mode)$/;"	function	line:87	signature:(enum TRANSLUCENCY_TYPE mode)	returns:static void
+checkImage	/home/graham/Programs/AvP/avp/src/opengl.c	/^static GLubyte checkImage[64][64][4];$/;"	variable	line:124
+CreateCheckImage	/home/graham/Programs/AvP/avp/src/opengl.c	/^void CreateCheckImage()$/;"	function	line:125	signature:()	returns:void
+InitRenderer	/home/graham/Programs/AvP/avp/src/opengl.c	/^void InitRenderer()$/;"	function	line:150	signature:()	returns:void
+FlushTriangleBuffers	/home/graham/Programs/AvP/avp/src/opengl.c	/^static void FlushTriangleBuffers(int backup)$/;"	function	line:188	signature:(int backup)	returns:static void
+CheckBoundTextureIsCorrect	/home/graham/Programs/AvP/avp/src/opengl.c	/^static void CheckBoundTextureIsCorrect(D3DTexture *tex)$/;"	function	line:239	signature:(D3DTexture *tex)	returns:static void
+CheckFilteringModeIsCorrect	/home/graham/Programs/AvP/avp/src/opengl.c	/^static void CheckFilteringModeIsCorrect(enum FILTERING_MODE_ID filter)$/;"	function	line:276	signature:(enum FILTERING_MODE_ID filter)	returns:static void
+CheckTranslucencyModeIsCorrect	/home/graham/Programs/AvP/avp/src/opengl.c	/^static void CheckTranslucencyModeIsCorrect(enum TRANSLUCENCY_TYPE mode)$/;"	function	line:300	signature:(enum TRANSLUCENCY_TYPE mode)	returns:static void
+CheckTriangleBuffer	/home/graham/Programs/AvP/avp/src/opengl.c	/^static void CheckTriangleBuffer(int rver, int sver, int rtri, int stri, D3DTexture *tex, enum TRANSLUCENCY_TYPE mode, enum FILTERING_MODE_ID filter)$/;"	function	line:312	signature:(int rver, int sver, int rtri, int stri, D3DTexture *tex, enum TRANSLUCENCY_TYPE mode, enum FILTERING_MODE_ID filter)	returns:static void
+OUTPUT_TRIANGLE	/home/graham/Programs/AvP/avp/src/opengl.c	/^#define OUTPUT_TRIANGLE(x, y, z) \\$/;"	macro	line:335
+OUTPUT_TRIANGLE	/home/graham/Programs/AvP/avp/src/opengl.c	/^#undef OUTPUT_TRIANGLE$/;"	macro	line:372
+OUTPUT_TRIANGLE	/home/graham/Programs/AvP/avp/src/opengl.c	/^#define OUTPUT_TRIANGLE(x, y, z) \\$/;"	macro	line:374
+OUTPUT_TRIANGLE	/home/graham/Programs/AvP/avp/src/opengl.c	/^#undef OUTPUT_TRIANGLE$/;"	macro	line:410
+CreateOGLTexture	/home/graham/Programs/AvP/avp/src/opengl.c	/^GLuint CreateOGLTexture(D3DTexture *tex, unsigned char *buf)$/;"	function	line:414	signature:(D3DTexture *tex, unsigned char *buf)	returns:GLuint
+ReleaseD3DTexture	/home/graham/Programs/AvP/avp/src/opengl.c	/^void ReleaseD3DTexture(void *tex)$/;"	function	line:451	signature:(void *tex)	returns:void
+ThisFramesRenderingHasBegun	/home/graham/Programs/AvP/avp/src/opengl.c	/^void ThisFramesRenderingHasBegun()$/;"	function	line:462	signature:()	returns:void
+ThisFramesRenderingHasFinished	/home/graham/Programs/AvP/avp/src/opengl.c	/^void ThisFramesRenderingHasFinished()$/;"	function	line:467	signature:()	returns:void
+FlushD3DZBuffer	/home/graham/Programs/AvP/avp/src/opengl.c	/^void FlushD3DZBuffer()$/;"	function	line:476	signature:()	returns:void
+SecondFlushD3DZBuffer	/home/graham/Programs/AvP/avp/src/opengl.c	/^void SecondFlushD3DZBuffer()$/;"	function	line:481	signature:()	returns:void
+D3D_DecalSystem_Setup	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_DecalSystem_Setup()$/;"	function	line:488	signature:()	returns:void
+D3D_DecalSystem_End	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_DecalSystem_End()$/;"	function	line:502	signature:()	returns:void
+D3D_Rectangle	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_Rectangle(int x0, int y0, int x1, int y1, int r, int g, int b, int a)$/;"	function	line:513	signature:(int x0, int y0, int x1, int y1, int r, int g, int b, int a)	returns:void
+D3D_ZBufferedGouraudTexturedPolygon_Output	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_ZBufferedGouraudTexturedPolygon_Output(POLYHEADER *inputPolyPtr, RENDERVERTEX *renderVerticesPtr)$/;"	function	line:576	signature:(POLYHEADER *inputPolyPtr, RENDERVERTEX *renderVerticesPtr)	returns:void
+D3D_SkyPolygon_Output	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_SkyPolygon_Output(POLYHEADER *inputPolyPtr, RENDERVERTEX *renderVerticesPtr)$/;"	function	line:651	signature:(POLYHEADER *inputPolyPtr, RENDERVERTEX *renderVerticesPtr)	returns:void
+D3D_ZBufferedCloakedPolygon_Output	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_ZBufferedCloakedPolygon_Output(POLYHEADER *inputPolyPtr, RENDERVERTEX *renderVerticesPtr)$/;"	function	line:711	signature:(POLYHEADER *inputPolyPtr, RENDERVERTEX *renderVerticesPtr)	returns:void
+D3D_Decal_Output	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_Decal_Output(DECAL *decalPtr, RENDERVERTEX *renderVerticesPtr)$/;"	function	line:782	signature:(DECAL *decalPtr, RENDERVERTEX *renderVerticesPtr)	returns:void
+D3D_Particle_Output	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_Particle_Output(PARTICLE *particlePtr, RENDERVERTEX *renderVerticesPtr)$/;"	function	line:883	signature:(PARTICLE *particlePtr, RENDERVERTEX *renderVerticesPtr)	returns:void
+D3D_PredatorThermalVisionPolygon_Output	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_PredatorThermalVisionPolygon_Output(POLYHEADER *inputPolyPtr, RENDERVERTEX *renderVerticesPtr)$/;"	function	line:986	signature:(POLYHEADER *inputPolyPtr, RENDERVERTEX *renderVerticesPtr)	returns:void
+D3D_ZBufferedGouraudPolygon_Output	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_ZBufferedGouraudPolygon_Output(POLYHEADER *inputPolyPtr, RENDERVERTEX *renderVerticesPtr)$/;"	function	line:1024	signature:(POLYHEADER *inputPolyPtr, RENDERVERTEX *renderVerticesPtr)	returns:void
+D3D_PlayerOnFireOverlay	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_PlayerOnFireOverlay()$/;"	function	line:1067	signature:()	returns:void
+D3D_PlayerDamagedOverlay	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_PlayerDamagedOverlay(int intensity)$/;"	function	line:1112	signature:(int intensity)	returns:void
+DrawNoiseOverlay	/home/graham/Programs/AvP/avp/src/opengl.c	/^void DrawNoiseOverlay(int tr)$/;"	function	line:1176	signature:(int tr)	returns:void
+D3D_ScreenInversionOverlay	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_ScreenInversionOverlay()$/;"	function	line:1222	signature:()	returns:void
+D3D_PredatorScreenInversionOverlay	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_PredatorScreenInversionOverlay()$/;"	function	line:1267	signature:()	returns:void
+DrawScanlinesOverlay	/home/graham/Programs/AvP/avp/src/opengl.c	/^void DrawScanlinesOverlay(float level)$/;"	function	line:1304	signature:(float level)	returns:void
+D3D_FadeDownScreen	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_FadeDownScreen(int brightness, int colour)$/;"	function	line:1353	signature:(int brightness, int colour)	returns:void
+D3D_HUD_Setup	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_HUD_Setup()$/;"	function	line:1393	signature:()	returns:void
+D3D_HUDQuad_Output	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_HUDQuad_Output(int imageNumber, struct VertexTag *quadVerticesPtr, unsigned int colour)$/;"	function	line:1402	signature:(int imageNumber, struct VertexTag *quadVerticesPtr, unsigned int colour)	returns:void
+D3D_RenderHUDNumber_Centred	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_RenderHUDNumber_Centred(unsigned int number,int x,int y,int colour)$/;"	function	line:1456	signature:(unsigned int number,int x,int y,int colour)	returns:void
+D3D_RenderHUDString	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_RenderHUDString(char *stringPtr,int x,int y,int colour)$/;"	function	line:1507	signature:(char *stringPtr,int x,int y,int colour)	returns:void
+D3D_RenderHUDString_Clipped	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_RenderHUDString_Clipped(char *stringPtr,int x,int y,int colour)$/;"	function	line:1556	signature:(char *stringPtr,int x,int y,int colour)	returns:void
+D3D_RenderHUDString_Centred	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_RenderHUDString_Centred(char *stringPtr, int centreX, int y, int colour)$/;"	function	line:1607	signature:(char *stringPtr, int centreX, int y, int colour)	returns:void
+RenderString	/home/graham/Programs/AvP/avp/src/opengl.c	/^void RenderString(char *stringPtr, int x, int y, int colour)$/;"	function	line:1666	signature:(char *stringPtr, int x, int y, int colour)	returns:void
+RenderStringCentred	/home/graham/Programs/AvP/avp/src/opengl.c	/^void RenderStringCentred(char *stringPtr, int centreX, int y, int colour)$/;"	function	line:1671	signature:(char *stringPtr, int centreX, int y, int colour)	returns:void
+RenderStringVertically	/home/graham/Programs/AvP/avp/src/opengl.c	/^void RenderStringVertically(char *stringPtr, int centreX, int bottomY, int colour)$/;"	function	line:1683	signature:(char *stringPtr, int centreX, int bottomY, int colour)	returns:void
+Hardware_RenderSmallMenuText	/home/graham/Programs/AvP/avp/src/opengl.c	/^int Hardware_RenderSmallMenuText(char *textPtr, int x, int y, int alpha, enum AVPMENUFORMAT_ID format) $/;"	function	line:1727	signature:(char *textPtr, int x, int y, int alpha, enum AVPMENUFORMAT_ID format)	returns:int
+Hardware_RenderSmallMenuText_Coloured	/home/graham/Programs/AvP/avp/src/opengl.c	/^int Hardware_RenderSmallMenuText_Coloured(char *textPtr, int x, int y, int alpha, enum AVPMENUFORMAT_ID format, int red, int green, int blue)$/;"	function	line:1779	signature:(char *textPtr, int x, int y, int alpha, enum AVPMENUFORMAT_ID format, int red, int green, int blue)	returns:int
+Hardware_RenderKeyConfigRectangle	/home/graham/Programs/AvP/avp/src/opengl.c	/^void Hardware_RenderKeyConfigRectangle(int alpha)$/;"	function	line:1834	signature:(int alpha)	returns:void
+Hardware_RenderHighlightRectangle	/home/graham/Programs/AvP/avp/src/opengl.c	/^void Hardware_RenderHighlightRectangle(int x1,int y1,int x2,int y2,int r, int g, int b)$/;"	function	line:1840	signature:(int x1,int y1,int x2,int y2,int r, int g, int b)	returns:void
+D3D_DrawSliderBar	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_DrawSliderBar(int x, int y, int alpha)$/;"	function	line:1845	signature:(int x, int y, int alpha)	returns:void
+D3D_DrawSlider	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_DrawSlider(int x, int y, int alpha)$/;"	function	line:1970	signature:(int x, int y, int alpha)	returns:void
+D3D_DrawRectangle	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_DrawRectangle(int x, int y, int w, int h, int alpha)$/;"	function	line:2012	signature:(int x, int y, int w, int h, int alpha)	returns:void
+D3D_DrawColourBar	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_DrawColourBar(int yTop, int yBottom, int rScale, int gScale, int bScale)$/;"	function	line:2239	signature:(int yTop, int yBottom, int rScale, int gScale, int bScale)	returns:void
+ColourFillBackBuffer	/home/graham/Programs/AvP/avp/src/opengl.c	/^void ColourFillBackBuffer(int FillColour)$/;"	function	line:2322	signature:(int FillColour)	returns:void
+ColourFillBackBufferQuad	/home/graham/Programs/AvP/avp/src/opengl.c	/^void ColourFillBackBufferQuad(int FillColour, int x0, int y0, int x1, int y1)$/;"	function	line:2336	signature:(int FillColour, int x0, int y0, int x1, int y1)	returns:void
+D3D_DrawBackdrop	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_DrawBackdrop()$/;"	function	line:2373	signature:()	returns:void
+BltImage	/home/graham/Programs/AvP/avp/src/opengl.c	/^void BltImage(RECT *dest, DDSurface *image, RECT *src)$/;"	function	line:2430	signature:(RECT *dest, DDSurface *image, RECT *src)	returns:void
+UpdateForceField	/home/graham/Programs/AvP/avp/src/opengl.c	/^void UpdateForceField(void);$/;"	prototype	line:2539	signature:(void)	returns:void
+D3D_DrawForceField	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_DrawForceField(int xOrigin, int yOrigin, int zOrigin, int fieldType);$/;"	prototype	line:2540	signature:(int xOrigin, int yOrigin, int zOrigin, int fieldType)	returns:void
+UpdateWaterFall	/home/graham/Programs/AvP/avp/src/opengl.c	/^void UpdateWaterFall(void);$/;"	prototype	line:2542	signature:(void)	returns:void
+D3D_DrawWaterFall	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_DrawWaterFall(int xOrigin, int yOrigin, int zOrigin);$/;"	prototype	line:2543	signature:(int xOrigin, int yOrigin, int zOrigin)	returns:void
+D3D_DrawPowerFence	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_DrawPowerFence(int xOrigin, int yOrigin, int zOrigin, int xScale, int yScale, int zScale);$/;"	prototype	line:2544	signature:(int xOrigin, int yOrigin, int zOrigin, int xScale, int yScale, int zScale)	returns:void
+D3D_DrawExplosion	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_DrawExplosion(int xOrigin, int yOrigin, int zOrigin, int size);$/;"	prototype	line:2545	signature:(int xOrigin, int yOrigin, int zOrigin, int size)	returns:void
+D3D_DrawWaterPatch	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_DrawWaterPatch(int xOrigin, int yOrigin, int zOrigin);$/;"	prototype	line:2547	signature:(int xOrigin, int yOrigin, int zOrigin)	returns:void
+D3D_DrawWaterOctagonPatch	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_DrawWaterOctagonPatch(int xOrigin, int yOrigin, int zOrigin, int xOffset, int zOffset);$/;"	prototype	line:2549	signature:(int xOrigin, int yOrigin, int zOrigin, int xOffset, int zOffset)	returns:void
+LightSourceWaterPoint	/home/graham/Programs/AvP/avp/src/opengl.c	/^int LightSourceWaterPoint(VECTORCH *pointPtr,int offset);$/;"	prototype	line:2551	signature:(VECTORCH *pointPtr,int offset)	returns:int
+D3D_DrawWaterMesh_Unclipped	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_DrawWaterMesh_Unclipped(void);$/;"	prototype	line:2552	signature:(void)	returns:void
+D3D_DrawWaterMesh_Clipped	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_DrawWaterMesh_Clipped(void);$/;"	prototype	line:2553	signature:(void)	returns:void
+D3D_DrawMoltenMetal	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_DrawMoltenMetal(int xOrigin, int yOrigin, int zOrigin);$/;"	prototype	line:2556	signature:(int xOrigin, int yOrigin, int zOrigin)	returns:void
+D3D_DrawMoltenMetalMesh_Unclipped	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_DrawMoltenMetalMesh_Unclipped(void);$/;"	prototype	line:2557	signature:(void)	returns:void
+D3D_DrawMoltenMetalMesh_Clipped	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_DrawMoltenMetalMesh_Clipped(void);$/;"	prototype	line:2558	signature:(void)	returns:void
+MeshXScale	/home/graham/Programs/AvP/avp/src/opengl.c	/^int MeshXScale;$/;"	variable	line:2560
+MeshZScale	/home/graham/Programs/AvP/avp/src/opengl.c	/^int MeshZScale;$/;"	variable	line:2561
+WaterFallBase	/home/graham/Programs/AvP/avp/src/opengl.c	/^int WaterFallBase;$/;"	variable	line:2562
+WaterXOrigin	/home/graham/Programs/AvP/avp/src/opengl.c	/^int WaterXOrigin;$/;"	variable	line:2564
+WaterZOrigin	/home/graham/Programs/AvP/avp/src/opengl.c	/^int WaterZOrigin;$/;"	variable	line:2565
+WaterUScale	/home/graham/Programs/AvP/avp/src/opengl.c	/^float WaterUScale;$/;"	variable	line:2566
+WaterVScale	/home/graham/Programs/AvP/avp/src/opengl.c	/^float WaterVScale;$/;"	variable	line:2567
+D3D_DrawParticle_Rain	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_DrawParticle_Rain(PARTICLE *particlePtr,VECTORCH *prevPositionPtr)$/;"	function	line:2569	signature:(PARTICLE *particlePtr,VECTORCH *prevPositionPtr)	returns:void
+PostLandscapeRendering	/home/graham/Programs/AvP/avp/src/opengl.c	/^void PostLandscapeRendering()$/;"	function	line:2634	signature:()	returns:void
+D3D_DrawWaterTest	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_DrawWaterTest(MODULE *testModulePtr)$/;"	function	line:3236	signature:(MODULE *testModulePtr)	returns:void
+MeshVertex	/home/graham/Programs/AvP/avp/src/opengl.c	/^VECTORCH MeshVertex[256];$/;"	variable	line:3366
+TEXTURE_WATER	/home/graham/Programs/AvP/avp/src/opengl.c	/^#define TEXTURE_WATER 0$/;"	macro	line:3367
+MeshWorldVertex	/home/graham/Programs/AvP/avp/src/opengl.c	/^VECTORCH MeshWorldVertex[256];$/;"	variable	line:3369
+MeshVertexColour	/home/graham/Programs/AvP/avp/src/opengl.c	/^unsigned int MeshVertexColour[256];$/;"	variable	line:3370
+MeshVertexSpecular	/home/graham/Programs/AvP/avp/src/opengl.c	/^unsigned int MeshVertexSpecular[256];$/;"	variable	line:3371
+MeshVertexOutcode	/home/graham/Programs/AvP/avp/src/opengl.c	/^char MeshVertexOutcode[256];$/;"	variable	line:3372
+D3D_DrawWaterPatch	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_DrawWaterPatch(int xOrigin, int yOrigin, int zOrigin)$/;"	function	line:3374	signature:(int xOrigin, int yOrigin, int zOrigin)	returns:void
+ForceFieldPointDisplacement	/home/graham/Programs/AvP/avp/src/opengl.c	/^signed int ForceFieldPointDisplacement[15*3+1][16];$/;"	variable	line:3767
+ForceFieldPointDisplacement2	/home/graham/Programs/AvP/avp/src/opengl.c	/^signed int ForceFieldPointDisplacement2[15*3+1][16];$/;"	variable	line:3768
+ForceFieldPointVelocity	/home/graham/Programs/AvP/avp/src/opengl.c	/^signed int ForceFieldPointVelocity[15*3+1][16];$/;"	variable	line:3769
+ForceFieldPointColour1	/home/graham/Programs/AvP/avp/src/opengl.c	/^unsigned char ForceFieldPointColour1[15*3+1][16];$/;"	variable	line:3770
+ForceFieldPointColour2	/home/graham/Programs/AvP/avp/src/opengl.c	/^unsigned char ForceFieldPointColour2[15*3+1][16];$/;"	variable	line:3771
+Phase	/home/graham/Programs/AvP/avp/src/opengl.c	/^int Phase=0;$/;"	variable	line:3773
+ForceFieldPhase	/home/graham/Programs/AvP/avp/src/opengl.c	/^int ForceFieldPhase=0;$/;"	variable	line:3774
+InitForceField	/home/graham/Programs/AvP/avp/src/opengl.c	/^void InitForceField(void)$/;"	function	line:3775	signature:(void)	returns:void
+D3D_DrawWaterFall	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_DrawWaterFall(int xOrigin, int yOrigin, int zOrigin)$/;"	function	line:4154	signature:(int xOrigin, int yOrigin, int zOrigin)	returns:void
+D3D_DrawMoltenMetalMesh_Unclipped	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_DrawMoltenMetalMesh_Unclipped(void)$/;"	function	line:4458	signature:(void)	returns:void
+D3D_DrawMoltenMetalMesh_Clipped	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_DrawMoltenMetalMesh_Clipped(void)$/;"	function	line:4536	signature:(void)	returns:void
+D3D_DrawCable	/home/graham/Programs/AvP/avp/src/opengl.c	/^void D3D_DrawCable(VECTORCH *centrePtr, MATRIXCH *orientationPtr)$/;"	function	line:4873	signature:(VECTORCH *centrePtr, MATRIXCH *orientationPtr)	returns:void
